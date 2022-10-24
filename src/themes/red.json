@@ -1,6 +1,7 @@
 {
   "--font": "serif",
   "--accent1": "hsl(358, 65.0%, 48.7%)",
-  "--space-1": "3rem",
-  "--space-2": "6rem"
+  "--space-0": "1rem",
+  "--space-1": "2rem",
+  "--space-2": "3rem"
 }
