@@ -1,2 +1,5 @@
-@import url("reset.css") layer(reset);
-@import url("base.css") layer(base);
+@inject "tokencss:base";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

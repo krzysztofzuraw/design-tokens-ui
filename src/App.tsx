@@ -1,13 +1,11 @@
 import * as Checkbox from "@radix-ui/react-checkbox";
 import { CheckIcon } from "@radix-ui/react-icons";
 
-import classes from "./styles/checkbox.module.css";
-
 function App() {
   return (
-    <main>
+    <main className="font-brand">
       <form>
-        <Checkbox.Root id="checkbox" className={classes.checkbox}>
+        <Checkbox.Root id="checkbox">
           <Checkbox.Indicator>
             <CheckIcon />
           </Checkbox.Indicator>

@@ -1,16 +1,5 @@
 import * as RadioGroup from "@radix-ui/react-radio-group";
-import {
-  createContext,
-  ReactElement,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
-
-import defaultTheme from "./themes/default.json";
-import redTheme from "./themes/red.json";
-
-import classes from "./styles/theme.module.css";
+import { createContext, ReactElement, useContext, useState } from "react";
 
 type Props = {
   children: ReactElement;
@@ -27,19 +16,19 @@ const ThemeContext = createContext<
 export const ThemeProvider = ({ children }: Props) => {
   const [theme, setTheme] = useState("default");
 
-  useEffect(() => {
-    const root = document.documentElement;
+  // useEffect(() => {
+  //   const root = document.documentElement;
 
-    if (theme == "red") {
-      Object.entries(redTheme).map(([key, value]) =>
-        root.style.setProperty(key, value)
-      );
-    } else {
-      Object.entries(defaultTheme).map(([key, value]) => {
-        root.style.setProperty(key, value);
-      });
-    }
-  }, [theme]);
+  //   if (theme == "red") {
+  //     Object.entries(redTheme).map(([key, value]) =>
+  //       root.style.setProperty(key, value)
+  //     );
+  //   } else {
+  //     Object.entries(defaultTheme).map(([key, value]) => {
+  //       root.style.setProperty(key, value);
+  //     });
+  //   }
+  // }, [theme]);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
@@ -53,27 +42,22 @@ const ThemeForm = () => {
   const context = useContext(ThemeContext);
 
   return (
-    <form className={classes.form}>
+    <form>
       <p>Select theme</p>
       <RadioGroup.Root
         defaultValue={context?.theme}
         aria-label="Theme"
         onValueChange={(value) => context?.setTheme(value)}
-        className={classes.radioGroup}
       >
-        <div className={classes.radioWrapper}>
-          <RadioGroup.Item
-            value="default"
-            id="radio-default"
-            className={classes.radio}
-          >
-            <RadioGroup.Indicator className={classes.indicator} />
+        <div>
+          <RadioGroup.Item value="default" id="radio-default">
+            <RadioGroup.Indicator />
           </RadioGroup.Item>
           <label htmlFor="radio-default">Default</label>
         </div>
-        <div className={classes.radioWrapper}>
-          <RadioGroup.Item value="red" id="radio-red" className={classes.radio}>
-            <RadioGroup.Indicator className={classes.indicator} />
+        <div>
+          <RadioGroup.Item value="red" id="radio-red">
+            <RadioGroup.Indicator />
           </RadioGroup.Item>
           <label htmlFor="radio-red">Red</label>
         </div>

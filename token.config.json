@@ -1,0 +1,28 @@
+{
+  "$schema": "https://tokencss.com/schema@0.0.1",
+  "extends": ["@tokencss/core"],
+  "color": {
+    "accent": {
+      "1": { "value": "#18794E" }
+    }
+  },
+  "space": {
+    "0": { "value": ".5rem" },
+    "1": { "value": "1rem" },
+    "2": { "value": "2rem" }
+  },
+  "font": {
+    "brand": {
+      "value": [
+        "system-ui",
+        "-apple-system",
+        "Segoe UI",
+        "Roboto",
+        "Ubuntu",
+        "Cantarell",
+        "Noto Sans",
+        "sans-serif"
+      ]
+    }
+  }
+}
