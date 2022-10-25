@@ -4,6 +4,9 @@
   "color": {
     "accent": {
       "1": { "value": "#18794E" }
+    },
+    "neutral": {
+      "1": { "value": "#333" }
     }
   },
   "space": {
@@ -13,16 +16,7 @@
   },
   "font": {
     "brand": {
-      "value": [
-        "system-ui",
-        "-apple-system",
-        "Segoe UI",
-        "Roboto",
-        "Ubuntu",
-        "Cantarell",
-        "Noto Sans",
-        "sans-serif"
-      ]
+      "value": ["sans-serif"]
     }
   }
 }

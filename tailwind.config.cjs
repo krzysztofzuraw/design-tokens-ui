@@ -13,10 +13,13 @@ module.exports = {
       accent: {
         1: "var(--color-accent-1)",
       },
+      neutral: {
+        1: "var(--color-neutral-1)",
+      },
     },
     fontFamily: {
       brand: "var(--font-brand)",
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-radix")({ variantPrefix: false })],
 };

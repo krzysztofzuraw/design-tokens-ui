@@ -1,0 +1,9 @@
+{
+  "--color-accent-1": "#CD2B31",
+  "--color-neutral-1": "#333",
+  "--space-0": "1rem",
+  "--space-1": "2rem",
+  "--space-2": "3rem",
+  "--font-brand": "serif",
+  "--tokencss": "1"
+}
