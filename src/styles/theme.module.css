@@ -23,7 +23,7 @@
 }
 
 .indicator {
-  --size: var(--space-1, 1.5rem);
+  --size: 0.25em;
   --color: var(--accent1);
 
   display: flex;

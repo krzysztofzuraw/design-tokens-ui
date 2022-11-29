@@ -32,11 +32,11 @@ export const ThemeProvider = ({ children }: Props) => {
 
     if (theme == "red") {
       Object.entries(redTheme).map(([key, value]) =>
-        root.style.setProperty(key, value)
+        root.style.setProperty(key, value.toString())
       );
     } else {
       Object.entries(defaultTheme).map(([key, value]) => {
-        root.style.setProperty(key, value);
+        root.style.setProperty(key, value.toString());
       });
     }
   }, [theme]);

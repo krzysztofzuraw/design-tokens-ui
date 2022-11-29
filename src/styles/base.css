@@ -1,3 +1,9 @@
+:root {
+  --space-0: clamp(0.4rem, 1vw, 0.5rem);
+  --space-1: calc(var(--space-0) * var(--space-scale));
+  --space-2: calc(var(--space-1) * var(--space-scale));
+}
+
 body {
   width: 100vw;
   height: 100vh;

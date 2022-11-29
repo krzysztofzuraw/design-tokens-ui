@@ -1,5 +1,5 @@
 .checkbox {
-  --size: var(--space-1, 1.5rem);
+  --size: var(--space-2, 1.5rem);
   --color: var(--accent1);
 
   width: var(--size);
